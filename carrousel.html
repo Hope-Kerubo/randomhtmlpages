@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boostrap assigment carousel</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+<style>
+  .home .carousel-item{
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .container{
+    position: absolute;
+    max-width:50%;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    padding-left: 70px;
+    bottom: 40%;
+    h2{
+      text-align: center;
+      font-weight: 700;
+      font-family: sans-serif;
+      font-size: 40px;
+      color: rgb(35, 35, 35);
+    }
+  }
+  #Sarah{
+    text-align: justify;
+    position: absolute;
+    max-width:39%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 70px;
+    padding-top: 30px;
+    color: rgb(33, 32, 32);
+
+  }
+  /* General Carousel Styles */
+  .home .carousel-item {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  /* Overlay Effect */
+  .carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+  }
+
+  /* Container Styling */
+  .container {
+    position: absolute;
+    max-width: 50%;
+    z-index: 2;
+    color: #ffffff;
+    padding: 20px 50px;
+    bottom: 40%;
+  }
+
+  /* Title and Paragraph Styling */
+  .container h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: Arial, sans-serif;
+    color: #f9f9f9;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  }
+
+  .container p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #f0f0f0;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  }
+
+  /* Typing Effect */
+  .typed-text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #f0f0f0;
+    animation: typing 3s steps(20, end), blink 0.7s infinite step-end;
+  }
+
+  /* Blinking Cursor Animation */
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+
+  /* Typing Keyframes */
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+
+  /* Adjust Carousel Captions */
+  .carousel-caption h2, .carousel-caption p {
+    color: #ffffff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  }
+
+  /* Carousel Controls */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: brightness(0) invert(1);
+  }
+  /* Slide 3: Sarah */
+    .slide3 .carousel-caption {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      max-width: 70%;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.5);
+      color: #ffffff;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
+    }
+  </style>
+</head>
+<body>
+  <section class="home">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="background-image: url(images/slide-1.jpg);">
+        </div>
+        <div class="carousel-item" style="background-image: url(images/slide-2.jpg);">
+        </div>
+       <div class="carousel-item slide3" style="background-image: url('images/slide-3.jpg');">
+        </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    </div>
+
+  </section>
+</body>
+</html>

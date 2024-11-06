@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="book.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <title>Restaurant Order</title>
+</head>
+<body>
+
+<section class="h-100 bg-dark">
+  <div class="container py-5 h-100 bg-danger">
+    <div class="row d-flex justify-content-center align-items-center h-100 ">
+      <div class="col bg-warning">
+        <div class="card card-registration my-4 bg-secondary">
+          <div class="row g-0 bg-info">
+            <div class="col-xl-6 d-none d-xl-block">
+                <div id="carouselExampleCaptions"  style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;"  class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators"  style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" >
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                     </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" style="background-image: url('assets/kobby-mendez-uV03YDn9RFM-unsplash.jpg');">
+                        </div>
+                        <div class="carousel-item" style="background-image: url(assets/crq7.jpg);">
+                        </div>
+                        <div class="carousel-item slide3" style="background-image: url(assets/alvano-putra-TdAatXFLWak-unsplash.jpg);">
+                        </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            <div class="col-xl-6">
+              <div c    lass="card-body text-center text-black">
+                <h3 class="mb-5 text-uppercase">Book a seat for your dinner!</h3>
+              </div>
+                <form id="booking-form">
+                        <div class="form-group form-input">
+                            <input type="text" name="name" id="name" value="" required/>
+                            <label for="name" class="form-label">Your name</label>
+                        </div>
+                        <div class="form-group form-input">
+                            <input type="number" name="phone" id="phone" value="" required />
+                            <label for="phone" class="form-label">Your phone number</label>
+                        </div>
+                        <div class="form-group">
+                            <div class="select-list">
+                                <select name="time" id="time" required>
+                                    <option value="">Time</option>
+                                    <option value="6pm">6:00 PM</option>
+                                    <option value="7pm">7:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="select-list">
+                                <select name="food" id="food" required>
+                                    <option value="">Food</option>
+                                    <option value="seasonalfish">Seasonal steamed fish</option>
+                                    <option value="assortedmushrooms">Assorted mushrooms</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-radio">
+                            <label class="label-radio"> Select Your Dining Space</label>
+                            <div class="radio-item-list">
+                                <span class="radio-item">
+                                    <input type="radio" name="number_people" value="2" id="number_people_2" />
+                                    <label for="number_people_2">2</label>
+                                </span>
+                                <span class="radio-item active">
+                                    <input type="radio" name="number_people" value="4" id="number_people_4" checked="checked" />
+                                    <label for="number_people_4">4</label>
+                                </span>
+                                <span class="radio-item">
+                                    <input type="radio" name="number_people" value="6" id="number_people_6" />
+                                    <label for="number_people_6">6</label>
+                                </span>
+                                <span class="radio-item">
+                                    <input type="radio" name="number_people" value="8" id="number_people_8" />
+                                    <label for="number_people_8">8</label>
+                                </span>
+                                <span class="radio-item">
+                                    <input type="radio" name="number_people" value="10" id="number_people_10" />
+                                    <label for="number_people_10">10</label>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="form-submit">
+                            <input type="submit" value="Book now" class="submit" id="submit" name="submit" />
+                            <a href="#" class="vertify-booking">Verify your booking info from your phone</a>
+                        </div>
+                    </form>
+            </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+</body>
+</html>
+

@@ -1,0 +1,38 @@
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+font-size: 1rem;
+line-height: 2.15;
+padding-left: .75em;
+padding-right: .75em;
+}
+.card-registration .select-arrow {
+top: 13px;
+}
+.card-body {
+  padding: 2rem; /* Reduces padding for a compact form */
+}
+
+.form-control-lg {
+  font-size: 0.9rem; /* Reduces font size for a smaller appearance */
+  padding: 0.5rem 1rem; /* Reduces padding within input fields */
+}
+
+.form-label {
+  font-size: 0.8rem; /* Reduces label font size */
+}
+
+.card {
+  max-width: 80%; /* Adjusts card width */
+  margin: auto; /* Centers card */
+}
+
+.btn {
+  padding: 0.5rem 1.5rem; /* Makes buttons slightly smaller */
+}
+
+select.form-select {
+  padding: 0.5rem; /* Reduces padding for select elements */
+}
+
+textarea.form-control {
+  padding: 0.5rem; /* Reduces padding for textarea */
+}
