@@ -1,0 +1,9 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Use common web-safe fonts */
+}
+
+/* Optional: Modify the header font for a distinctive look */
+.header {
+    font-family: 'Georgia', 'Times New Roman', Times, serif; /* Give the header a different, more elegant font */
+    font-weight: bold;
+}
