@@ -1,0 +1,29 @@
+body {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    font-family: 'Arial', sans-serif;
+}
+
+.card {
+    background: white;
+    border: none;
+}
+
+.card h3 {
+    color: #4a4a4a;
+}
+
+.btn-primary {
+    background-color: #6e8efb;
+    border: none;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #4b6cc1;
+}
+
+input:focus, textarea:focus {
+    border-color: #6e8efb;
+    box-shadow: 0 0 5px rgba(110, 142, 251, 0.5);
+    outline: none;
+}
