@@ -22,6 +22,17 @@ body {
     background-color: #4b6cc1;
 }
 
+.btn-outline-secondary {
+    border-color: #6e8efb;
+    color: #6e8efb;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #6e8efb;
+    color: white;
+}
+
 input:focus, textarea:focus {
     border-color: #6e8efb;
     box-shadow: 0 0 5px rgba(110, 142, 251, 0.5);
