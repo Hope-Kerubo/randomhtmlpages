@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - General Items</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+        }
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            width: 250px;
+            height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        .navbar a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            margin: 15px 0;
+            font-size: 18px;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            margin-left: 270px;
+            padding: 20px;
+            width: calc(100% - 270px);
+        }
+        .item-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+        .item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 30%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .item:hover {
+            transform: scale(1.05);
+        }
+        .item img {
+            width: 100%;
+            border-radius: 8px;
+            alt: "Image of product";
+        }
+        .item-title {
+            font-size: 20px;
+            margin: 10px 0;
+            color: #333;
+        }
+        .item-price {
+            font-size: 18px;
+            color: #28a745;
+            margin-bottom: 10px;
+        }
+        .add-to-cart {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .add-to-cart:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">ShopEase</div>
+        <nav>
+            <a href="#" aria-label="Home">Home</a>
+            <a href="#" aria-label="Shop">Shop</a>
+            <a href="#" aria-label="About">About</a>
+            <a href="#" aria-label="Contact">Contact</a>
+        </nav>
+    </div>
+
+    <div class="container">
+        <h1>Featured Items</h1>
+        <div class="item-list">
+            <div class="item" tabindex="0">
+                <img src="item1.jpg" alt="Image of Product 1">
+                <h2 class="item-title">Product 1</h2>
+                <p class="item-price">Ksh 12,500</p>
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <div class="item" tabindex="0">
+                <img src="item2.jpg" alt="Image of Product 2">
+                <h2 class="item-title">Product 2</h2>
+                <p class="item-price">Ksh 9,999</p>
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <div class="item" tabindex="0">
+                <img src="item3.jpg" alt="Image of Product 3">
+                <h2 class="item-title">Product 3</h2>
+                <p class="item-price">Ksh 15,750</p>
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <div class="item" tabindex="0">
+                <img src="item4.jpg" alt="Image of Product 4">
+                <h2 class="item-title">Product 4</h2>
+                <p class="item-price">Ksh 8,750</p>
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <div class="item" tabindex="0">
+                <img src="item5.jpg" alt="Image of Product 5">
+                <h2 class="item-title">Product 5</h2>
+                <p class="item-price">Ksh 11,300</p>
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <div class="item" tabindex="0">
+                <img src="item6.jpg" alt="Image of Product 6">
+                <h2 class="item-title">Product 6</h2>
+                <p class="item-price">Ksh 14,500</p>
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <div class="item" tabindex="0">
+                <img src="item7.jpg" alt="Image of Product 7">
+                <h2 class="item-title">Product 7</h2>
+                <p class="item-price">Ksh 7,200</p>
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <div class="item" tabindex="0">
+                <img src="item8.jpg" alt="Image of Product 8">
+                <h2 class="item-title">Product 8</h2>
+                <p class="item-price">Ksh 10,900</p>
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <div class="item" tabindex="0">
+                <img src="item9.jpg" alt="Image of Product 9">
+                <h2 class="item-title">Product 9</h2>
+                <p class="item-price">Ksh 16,450</p>
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
