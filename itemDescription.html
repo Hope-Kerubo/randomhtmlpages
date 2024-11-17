@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .item-container {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 16px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            margin-bottom: 40px;
+        }
+        .item-title {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+        .item-image {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .item-description {
+            margin: 12px 0;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .item-price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #28a745;
+            margin-bottom: 16px;
+        }
+        .buy-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 12px;
+        }
+        .buy-button:hover {
+            background-color: #0056b3;
+        }
+        .suggestions, .reviews {
+            margin-top: 40px;
+        }
+        .suggestions h2, .reviews h2 {
+            font-size: 28px;
+            margin-bottom: 16px;
+        }
+        .suggested-item {
+            display: inline-block;
+            width: 30%;
+            margin: 1%;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            transition: transform 0.2s;
+        }
+        .suggested-item:hover {
+            transform: scale(1.05);
+        }
+        .suggested-item img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .review {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .review h3 {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+        .review p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item-container">
+            <h1 class="item-title">Product Name</h1>
+            <img src="item-image.jpg" alt="Product Image" class="item-image">
+            <p class="item-description">This is a detailed description of the product. It highlights the features, benefits, and specifications that make this item unique and valuable to the customer.</p>
+            <p class="item-price">Ksh 14,999</p>
+            <a href="#" class="buy-button">Buy Now</a>
+        </div>
+
+        <div class="suggestions">
+            <h2>Items You May Like</h2>
+            <div class="suggested-item">
+                <img src="suggested-item1.jpg" alt="Suggested Item 1">
+                <p>Suggested Product 1</p>
+                <p class="item-price">Ksh 7,499</p>
+            </div>
+            <div class="suggested-item">
+                <img src="suggested-item2.jpg" alt="Suggested Item 2">
+                <p>Suggested Product 2</p>
+                <p class="item-price">Ksh 8,999</p>
+            </div>
+            <div class="suggested-item">
+                <img src="suggested-item3.jpg" alt="Suggested Item 3">
+                <p>Suggested Product 3</p>
+                <p class="item-price">Ksh 5,999</p>
+            </div>
+        </div>
+
+        <div class="reviews">
+            <h2>Customer Reviews</h2>
+            <div class="review">
+                <h3>John Doe</h3>
+                <p>Great product! It met all my expectations and I am very satisfied with the purchase.</p>
+            </div>
+            <div class="review">
+                <h3>Jane Smith</h3>
+                <p>Good value for money. The quality is decent and delivery was quick.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
