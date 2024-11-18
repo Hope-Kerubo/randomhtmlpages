@@ -3,29 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tube Light Effect</title>
+    <title>Tube Light Effects</title>
     <style>
         body {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
+            gap: 20px;
             height: 100vh;
             margin: 0;
             background: #000;
             font-family: Arial, sans-serif;
         }
 
-        .tube-light {
+        /* Tube Light Design 1 */
+        .tube-light-1 {
             width: 400px;
             height: 20px;
             background: linear-gradient(90deg, #fff, #ccc, #fff);
             border-radius: 10px;
             position: relative;
             box-shadow: 0 0 15px 5px #fff;
-            animation: flicker 1.5s infinite;
+            animation: flicker1 1.5s infinite;
         }
 
-        @keyframes flicker {
+        @keyframes flicker1 {
             0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
                 box-shadow: 0 0 15px 5px #fff, 0 0 20px 10px #ccc inset;
                 opacity: 1;
@@ -39,9 +42,78 @@
                 opacity: 0.5;
             }
         }
+
+        /* Tube Light Design 2 */
+        .tube-light-2 {
+            width: 350px;
+            height: 25px;
+            background: linear-gradient(90deg, #b5e7ff, #0044ff, #b5e7ff);
+            border-radius: 12px;
+            position: relative;
+            box-shadow: 0 0 20px 8px #00f;
+            animation: flicker2 2s infinite;
+        }
+
+        @keyframes flicker2 {
+            0%, 50%, 100% {
+                opacity: 1;
+                box-shadow: 0 0 20px 8px #00f, 0 0 15px 10px #0044ff inset;
+            }
+            30%, 70% {
+                opacity: 0.6;
+                box-shadow: 0 0 10px 5px #0077cc, 0 0 10px 5px #003388 inset;
+            }
+        }
+
+        /* Tube Light Design 3 */
+        .tube-light-3 {
+            width: 300px;
+            height: 18px;
+            background: linear-gradient(90deg, #ffdf00, #ff9900, #ffdf00);
+            border-radius: 9px;
+            position: relative;
+            box-shadow: 0 0 15px 4px #ff9900;
+            animation: flicker3 1s infinite;
+        }
+
+        @keyframes flicker3 {
+            0%, 100% {
+                opacity: 1;
+                box-shadow: 0 0 15px 4px #ff9900, 0 0 12px 6px #ff6600 inset;
+            }
+            25%, 75% {
+                opacity: 0.5;
+                box-shadow: 0 0 8px 3px #cc7700, 0 0 10px 5px #995500 inset;
+            }
+        }
+
+        /* Tube Light Design 4 */
+        .tube-light-4 {
+            width: 450px;
+            height: 22px;
+            background: linear-gradient(90deg, #ccffcc, #009900, #ccffcc);
+            border-radius: 11px;
+            position: relative;
+            box-shadow: 0 0 25px 10px #00ff00;
+            animation: flicker4 3s infinite;
+        }
+
+        @keyframes flicker4 {
+            0%, 40%, 100% {
+                opacity: 1;
+                box-shadow: 0 0 25px 10px #00ff00, 0 0 20px 8px #009900 inset;
+            }
+            20%, 80% {
+                opacity: 0.3;
+                box-shadow: 0 0 12px 5px #00cc00, 0 0 15px 7px #006600 inset;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="tube-light"></div>
+    <div class="tube-light-1"></div>
+    <div class="tube-light-2"></div>
+    <div class="tube-light-3"></div>
+    <div class="tube-light-4"></div>
 </body>
 </html>
